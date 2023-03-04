@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="back-container">
+            <video autoplay loop muted>
+                <source src="video/dream.mp4">
+            </video>
+        </div>
+        <div class="inner-container">
+            <div class="main">
+<form name="calculator">
+    <input type="text" name="inputValue" id="no1" placeholder="0">
+    <br>
+  <input type="button" value="1" id="btn" onclick="calculator.inputValue.value+=1">
+  <input type="button" value="2" id="btn" onclick="calculator.inputValue.value+=2">
+  <input type="button" value="3" id="btn" onclick="calculator.inputValue.value+=3">
+  <input type="button" value="+" id="btn" onclick="add()">
+  <br>
+  <input type="button" value="4" id="btn" onclick="calculator.inputValue.value+=4">
+  <input type="button" value="5" id="btn" onclick="calculator.inputValue.value+=5">
+  <input type="button" value="6" id="btn" onclick="calculator.inputValue.value+=6">
+  <input type="button" value="-" id="btn" onclick="minus()">
+  <br>
+  <input type="button" value="7" id="btn" onclick="calculator.inputValue.value+=7">
+  <input type="button" value="8" id="btn" onclick="calculator.inputValue.value+=8">
+  <input type="button" value="9" id="btn" onclick="calculator.inputValue.value+=9">
+  <input type="button" value="/" id="btn" onclick="division()">
+  <br>
+  <input type="button" value="c" class="btn-c" id="btn" onclick="calculator.inputValue.value=''">
+  <input type="button" value="0" id="btn" onclick="calculator.inputValue.value+=0">
+  <input type="button" value="=" id="btn" onclick="calculator.inputValue.value=eval(calculator.inputValue.value)">
+  <input type="button" value="x" id="btn" onclick="multiply()">
+</form>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
